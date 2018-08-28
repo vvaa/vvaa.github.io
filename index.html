@@ -1,0 +1,126 @@
+<!Doctype html>
+<html xmlns=http://www.w3.org/1999/xhtml>
+<head>
+<meta http-equiv=Content-Type content="text/html;charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Search</title>
+<style type="text/css">
+	body{
+		text-align:center;
+	}
+	input{
+		margin:0.5em auto 0 0;
+		font-size: 1.5em;
+	}
+</style>
+<script type="text/javascript">
+     window.onload = function()
+     {
+      document.getElementById("t1").focus();
+     }
+</script>
+</head>
+<body>
+
+<form name="form1">
+<div>
+<input type=text name="text1" id="t1">
+<input type="hidden" name="text2">
+</div><div>
+<input type="submit" value="百度" onclick="javascript:
+text1.name='word';
+text2.name='ie';
+text2.value='utf-8';
+form1.action='https://www.baidu.com/baidu';
+">
+
+<input type="submit" value="搜狗" onclick="javascript:
+text1.name='word';
+text2.name='ie';
+text2.value='utf-8';
+form1.action='https://www.sogou.com/web';
+">
+
+<input type="submit" value="Bing" onclick="javascript:
+text1.name='q';
+text2.name='setlang';
+text2.value='en-us';
+form1.action='http://global.bing.com/search';
+">
+
+</div><div>
+
+<input type="submit" value="微博" onclick="javascript:
+window.open('http://s.weibo.com/weibo/' + text1.value);
+">
+
+<input type="submit" value="淘宝" onclick="javascript:
+text1.name='q';
+text2.name='ie';
+text2.value='utf-8';
+form1.action='https://s.taobao.com/search';
+">
+
+<input type="submit" value="京东" onclick="javascript:
+text1.name='keyword';
+text2.name='enc';
+text2.value='utf-8';
+form1.action='https://search.jd.com/Search';">
+
+</div><div>
+
+<input type="submit" value="Google" onclick="javascript:
+text1.name='q';
+form1.action='https://www.google.com/search';
+">
+
+<input type="submit" value="Wikipedia" onclick="javascript:
+text1.name='search';
+form1.action='https://en.wikipedia.org/w/index.php';
+">
+
+</div><div>
+
+<input type="submit" value="知乎" onclick="javascript:
+text1.name='query';
+text2.name='ie';
+text2.value='utf-8';
+form1.action='https://zhihu.sogou.com/zhihu';
+">
+
+<input type="submit" value="微信" onclick="javascript:
+text1.name='query';
+text2.name='type';
+text2.value='2';
+form1.action='http://weixin.sogou.com/weixin';
+">
+
+<input type="submit" value="GitHub" onclick="javascript:
+text1.name='q';
+text2.name='type';
+text2.value='';
+form1.action='https://github.com/search';
+">
+</div><div>
+
+<input type="submit" value="谷歌验证器" onclick="javascript:
+window.open('https://vvaa.github.io/gauth/');
+">
+
+<input type="submit" value="二维码" onclick="javascript:
+window.open('https://vvaa.github.io/qrcode/');
+">
+
+</div><div>
+
+<input type="submit" value="资源猫" onclick="javascript:
+window.open('https://www.ziyuanmao.com/#/resource/' + text1.value);
+">
+
+</div>
+
+</form>
+
+
+</body>
+</html>
